@@ -51,9 +51,10 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunites - especially ambitious or
-            large projects. However , if you have other request or question,
-            don't hesitate to contact me using below form either.
+          Hello,<br />
+          Thank you for visiting my portfolio. I'm delighted to introduce myself as a creative professional eager to explore exciting opportunities with forward-thinking companies like yours.<br />
+          Please don't hesitate to reach out using the form below and
+          let's explore the possibilities and embark on a journey of creativity and success together. <br/>I'm excited to be a part of your team and contribute to your future achievements.
           </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
@@ -101,7 +102,7 @@ const Contact = () => {
           <MapContainer center={[28.713125, 77.215991]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[28.713125, 77.215991]}>
-              <Popup>Don't worry dear, I am here :)</Popup>
+              <Popup>I am here :)</Popup>
             </Marker>
           </MapContainer>
           {/**react-leaflet library is responsible for maps. MapConatiner will do this. */}

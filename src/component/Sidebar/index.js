@@ -15,9 +15,6 @@ import {
   faHome,
   faUser,
   faEnvelope,
-  faSuitcase,
-  faBars,
-  faClose,
   faListCheck
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -26,7 +23,7 @@ const Sidebar = () => {
     <div className="nav-bar">
       <Link className="logo" to="/">
         <img src={Logo} alt="logo" />
-        {/**<img className="sub-logo" src={LogoSubtitle} alt="slobodan" />*/}
+        
       </Link>
 
       <nav>
@@ -53,7 +50,7 @@ const Sidebar = () => {
           exact="true"
           activeclassname="active"
           className="project-link"
-          to="/projects"
+          to="/project"
         >
         <FontAwesomeIcon icon={faListCheck} color='#4d4d4e' />        
         </NavLink>
@@ -73,9 +70,9 @@ const Sidebar = () => {
             {/* <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" /> */}
             {/* <img src="../../assets/images/Netlify_dark.png" alt="" /> */}
 
-            <div class="image-container">
-            <img class="default-image" src={Netlify_dark} alt="" />
-            <img class="hover-image" src={Netlify_yellow} alt="" />
+            <div className="image-container">
+            <img className="default-image" src={Netlify_dark} alt="" />
+            <img className="hover-image" src={Netlify_yellow} alt="" />
             </div>
 
           </a>

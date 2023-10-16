@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import gsap from 'gsap'
+// import gsap from 'gsap'
 
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -10,8 +10,9 @@ import AnimatedLetters from '../AnimatedLetters'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   
-  const nameArray = " Ehsan Rahi".split("")
-  const jobArray = "Front-end Developer.".split("")
+  const nameArray = "Ehsan Rahi".split("")
+  const jobArray1 = "Front-end ".split("")
+  const jobArray2 = "Developer.".split("")
 
 
 
@@ -143,19 +144,21 @@ window.addEventListener('mousemove', (event) => {
 /**
  * Animate
  */
-const clock = new THREE.Clock()
-let previousTime = 0
+// const clock = new THREE.Clock()
+// let previousTime = 0
 
 const tick = () =>
 {
-    const elapsedTime = clock.getElapsedTime()
-    const deltaTime = elapsedTime - previousTime
-    previousTime = elapsedTime
+    // const elapsedTime = clock.getElapsedTime()
+    // const deltaTime = elapsedTime - previousTime
+    // previousTime = elapsedTime
 
+    if (window.innerWidth > 768){
     // Animate particle positions
   // Update the positions of the particles based on the cursor
   particles.position.x = cursor.x;
   particles.position.y = - cursor.y;
+    }
 
     // Render
     renderer.render(scene, camera)
@@ -191,7 +194,9 @@ tick()
 
           <span className="m_name">
             <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
+            <span className={`${letterClass} _14`}>'m&nbsp;</span>
+            {/* space */}
+
 
             <AnimatedLetters
               letterClass={letterClass}
@@ -200,16 +205,28 @@ tick()
             />
           </span>
             <br />
+            <span className='jobArray'>
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={jobArray}
+            strArray={jobArray1}
             idx={15}
           />
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={jobArray2}
+            idx={15}
+          />
+          </span>
         </h1>
 
         {/* <img src={Logo} alt="" /> */}
 
-        <h2>Frontend Developer / JavaScript / React / Redux</h2>
+        <h2>
+        <span>Frontend Developer | </span>
+        <span>JavaScript | </span>
+        <span>React | </span> 
+        <span>Redux</span>
+        </h2>
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>

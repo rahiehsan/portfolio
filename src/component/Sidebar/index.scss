@@ -154,3 +154,12 @@ ul{
     opacity: 1; /* When hovering over the container, make the second image visible */
   }
   
+
+    /* Additional styles for larger screens */
+    @media (max-width: 768px) {
+        .nav-bar {
+          right: 0;
+        //   height: 100%;
+        //   left: initial;
+        }
+      }

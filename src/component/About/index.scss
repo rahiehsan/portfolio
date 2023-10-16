@@ -75,3 +75,25 @@
     }
 }
 
+
+
+@media (max-width: 768px){
+
+    .text-zone{
+    h1{
+        top: -110px;
+    }
+}
+
+    p{
+        position: relative;
+        top: 230px;
+        width: 250px;
+    }
+
+    .stage-cube-cont{
+        width: 300px;
+        left: 14px;
+        top: 150px;
+    }
+}

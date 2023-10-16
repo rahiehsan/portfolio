@@ -111,3 +111,27 @@
         }
     }
 }
+
+
+@media (max-width: 768px) {
+    .container {
+      overflow-y: auto;
+      max-height: 100%; /* Set a maximum height */
+    //   position: relative !important;
+    }
+
+    .tags{
+        // position: fixed;
+        left: 25px;
+    }
+
+    .top-tags{
+        // position: fixed !important;
+        top: 10px;
+    }
+
+    .bottom-tags{
+        // position: fixed !important;
+    }
+  }
+  

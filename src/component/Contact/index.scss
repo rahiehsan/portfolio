@@ -113,3 +113,26 @@
   animation: backInRight 1s 1.2s;
   animation-fill-mode: forwards;
 }
+
+
+
+@media (max-width: 768px){
+
+  .text-zone{
+  h1{
+    top: 20px;
+  }
+  }
+  p{
+    top: 20px;
+  }
+
+  .contact-form{
+    padding-top: 10px;
+    width: 250px;
+  }
+
+  .info-map{
+    visibility: hidden;
+  }
+}
