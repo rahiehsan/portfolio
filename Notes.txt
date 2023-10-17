@@ -12,3 +12,13 @@ in developer (loper)letter 's are not popping
 
 weather app :- https://jazzy-wisp-4d4ded.netlify.app/
 
+
+
+
+
+// for updating repository
+git init
+git add .
+git branch -M main
+git push -u origin main
+// for updating repository

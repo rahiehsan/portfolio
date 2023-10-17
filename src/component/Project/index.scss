@@ -49,14 +49,14 @@
   @media (max-width: 768px) {
 
     h1{
-      width: 200%;
+      width: 220px;
     }
 
     .projects {
       // width: 30%;
       position: relative;
-      right: 75px;
-      top: 150px;
+      right: 68px;
+      top: 30px;
     }
 
     .project{
@@ -66,20 +66,36 @@
     }
 
     .first-project{
-      // margin-bottom: 50px;
+      margin-bottom: 50px;
+    }
+
+    .middle-project{
+      // margin-top: 100px;
     }
 
     .last-project{
       // margin-bottom: -50px;
     }
 
-    h2{
-      
-  //     white-space: nowrap;
-  // display: inline;
+    h2 span{
+      display: flex;
+      width: 160px;
+      margin-left: -5px;
+      letter-spacing: -5px;
+      text-decoration: none;
+      // left: -20px;
+      // height: 20px;
+      // white-space: nowrap;
+      // display: inline;
     }
 
-    p{
+    h2 a{
+      text-decoration: none;
+    }
+
+    .text-zone p{
+      width: 85px;
+
       // word-wrap: break-word;
     }
   }

@@ -129,9 +129,13 @@
 
 @media (max-width: 768px){
   body{
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
+    // overflow: hidden;
+    // width: 100%;
+    // height: 100vh;
+  }
+
+  .page{
+    width: 300px;
   }
 
   .m_name{
@@ -141,9 +145,15 @@
   .jobArray{
     display: block !important;
   }
+  
+  .jobArray br{
+      display: none !important;
+    }
+  
 
   h2 span{
     width: 200px;
     display: block;
   }
 }
+

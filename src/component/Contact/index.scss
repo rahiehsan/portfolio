@@ -119,18 +119,28 @@
 @media (max-width: 768px){
 
   .text-zone{
+
   h1{
     top: 20px;
+    // font-size: 10px;
+    // width: 260px;
   }
+
+  h1 span {
+    font-size: 43px;
   }
+
+  
   p{
     top: 20px;
+    width: 210px;
   }
 
   .contact-form{
     padding-top: 10px;
     width: 250px;
   }
+}
 
   .info-map{
     visibility: hidden;
